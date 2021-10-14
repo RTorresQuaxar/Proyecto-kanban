@@ -1,0 +1,43 @@
+/*Estilos del tablero kanban*/
+
+
+
+.kanban {
+  display: flex;
+  margin: 24px;
+  justify-content: center;
+}
+
+.kanban-col {
+  list-style: none;
+  width: 160px;
+  padding: 0;
+  margin-left: 8px;
+}
+
+.kanban-col-name {
+  background-color:  #ebf6de ;
+  text-align: center;
+  margin-bottom: 16px;
+  padding: 16px;
+  border: black 1px solid;
+}
+
+.kanban-col-item {
+  background-color:   #d1d7d8  ;
+  margin-bottom: 4px;
+  padding: 16px;
+  cursor: grab;
+  border-radius: 5px;
+  border: grey 1px solid;
+}
+
+.kanban-col-item:active {
+  cursor: grabbing;
+}
+
+
+img {
+  width: 650px;
+  height: 820;
+}

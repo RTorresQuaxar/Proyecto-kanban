@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tableros Kanban</h1>
+<p>Parece que ya tienes un tablero inciiado, dale click para abrirlo.</p>
+
+
+
+  <tbody>
+    <% @kanbans.each do |kanban| %>
+      <tr>
+        
+        <td><%= link_to 'Abrir Tablero', kanban %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
