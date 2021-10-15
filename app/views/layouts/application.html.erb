@@ -14,9 +14,14 @@
   <body>
   <%= render 'pages/header' %>
   <div class="container">
-    <br/>
-    <%= yield %>
+   <br/>
+    <% if notice %>
+      <%= render 'layouts/alerts' %>
+    <% end %>
+      <%= yield %>
     </div>
+
+    
     
   </body>
 </html>
